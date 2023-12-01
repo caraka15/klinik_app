@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './ui/beranda.dart';
-
+import '/helpers/user_info.dart';
+import '/ui/login.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
@@ -11,18 +12,20 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Klinik',
-      home: Beranda(),
+      home: TOKEN == Null ? Login() : Beranda(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
   // how it looks.

@@ -12,8 +12,8 @@ class Sidebar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-              accountName: Text("Caraka"),
-              accountEmail: Text("caraka@admin.com")),
+              accountName: Text("Bagas"),
+              accountEmail: Text("Bagas7.com")),
           ListTile(
             leading: Icon(Icons.home),
             title: Text("Beranda"),
